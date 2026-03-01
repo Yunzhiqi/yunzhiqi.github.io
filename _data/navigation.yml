@@ -11,8 +11,8 @@ main:
   - title: "项目作品集"
     url: /portfolio/
   
-  - title: "论文"
-    url: /publications/
+  # - title: "论文"
+  #   url: /publications/
 
   # - title: "Talks"
   #   url: /talks/    
