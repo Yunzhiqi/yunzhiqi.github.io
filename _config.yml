@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "zh-CN"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Your Name / Site Title"
+title                    : "付兴豪 | 计算机技术硕士"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "付兴豪 (Xinghao Fu)"
+description              : &description "山东大学计算机技术硕士，专注于计算机视觉、深度学习与文档智能处理"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://yunzhiqi.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,24 +24,24 @@ repository               : "yunzhiqi/yunzhiqi.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  name             : "付兴豪"
+  pronouns         : "他" # example: "she/her"  
+  bio              : "山东大学计算机技术硕士，研究方向为计算机视觉、文档智能处理。具有丰富的AI模型部署与应用经验，多次在科技创新竞赛中获奖。"
+  location         : "山东，中国"
+  employer         : "山东大学"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "Guan_yunzhiqi@163.com" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : # 如果有Google Scholar可以添加
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : # 如果有ORCID可以添加
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
@@ -51,13 +51,13 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "yunzhiqi"  # 改为你的GitHub用户名
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # 如果没有可以留空
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : # 如果有LinkedIn可以添加
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -80,7 +80,7 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : # Username
+  zhihu            : # 如果有知乎可以添加
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
@@ -90,6 +90,15 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+
+# 可以添加项目类别（如果要用到）
+project_category:
+  research:
+    title: '科研项目'
+  industry:
+    title: '工业界项目'
+  competition:
+    title: '竞赛项目'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -148,9 +157,11 @@ og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Person # or Organization (defaults to Person)
+  name                   : "付兴豪" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://github.com/yunzhiqi"
+    # 添加其他社交链接
 
 
 # Analytics
@@ -302,7 +313,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai # 改为中国时区
 
 
 # Plugins
