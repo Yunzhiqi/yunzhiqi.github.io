@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "个人简历"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,38 +9,65 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+教育背景
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **硕士在读**，山东大学，计算机技术，2024.09-至今
+  * 主修课程：高级算法分析与设计、数据挖掘、工程数学、电子信息工程实践案例分析等
 
-Work experience
+* **学士学位**，山东大学，计算机科学与技术，2020.09-2024.06
+  * 主修课程：高级语言程序设计、数据库系统、计算机组成与设计、汇编语言、计算机网络、操作系统
+
+项目经历
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+**投标文件识别系统** | 核心成员 (2024.09-2025.09)
+* 借助人工智能的图像分类与文本识别技术，实现投标文件从页面类别识别、关键数据提取到文档智能拆解的全流程处理
+* 基于多种技术路线实现投标文件的识别、解读和分类三类功能：
+  - 构建规则引擎解析文档标题并生成目录
+  - 基于YOLOv11训练页面分类模型，可识别合同/发票/人员信息/财务报表等项目
+  - 集成PDF-Extract-Kit与ChatGLM构建文本结构化流水线，自动提取财务报表关键字段
+* 成果：测试PDF文件83个（总计15175页），准确率达98.2%；已申请发明专利，通过验收并投入实用，较人工录入提速10倍以上
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+**基于Stylegan2的样本数据生成** | 核心成员 (2025.03-2025.05)
+* 为某公司PCB项目的缺陷检测系统生成示范性缺陷数据集，解决样本量稀少问题
+* 缺陷样本特点：种类多(Mulgold/epitaxy/Mesa等)、光源杂、难以辨认
+* 基于Stylegan2生成与原缺陷风格一致的数据，训练期间实时调度显存，生成多种需求图像
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+**基于深度学习的人事档案数字化工具** | 核心参与者 (2025.08-2025.12)
+* 智能档案识别系统：自动识别和提取人员档案扫描件中的关键信息，实现档案数据的自动化录入和管理
+* 负责文档解析、档案目录识别和解析功能，为项目测试生成所需数据集
+* 技术实现：
+  - 使用Ollama部署DeepseekOCR实现文档布局解析
+  - 使用Qwen3实现目录识别中标题总结功能并生成测试数据
+* 成果：系统以高准确率解析文档，有效解决标题错漏问题，提升项目鲁棒性
+
+竞赛经历
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+**山东大学研究生金融科技创新大赛** | 核心成员 (2025.07-2025.10)
+* 赛事任务：构建智能化印章真伪鉴别解决方案，精准定位印章区域，智能判别真伪并输出量化概率，与预留印鉴对比后输出一致性概率
+* 作为团队主要算法设计者，主导核心算法设计与模型训练工作
+* 使用Qwen2.5VL进行数据标注，针对性解决印章区域定位、真伪分类及文字识别三类问题
+* 成果：获得大赛一等奖
 
+技能特长
+======
+* **语言能力**：
+  * 大学英语六级（CET-6），具备熟练的英语听说读写能力
+  * 熟练使用Python、C++
+
+* **模型部署与应用经验**：
+  * 部署ChatGLM3-6B执行摘要生成 (2024.11)
+  * 使用ktransformers部署DeepseekR1 (2025.02)
+  * 使用Ollama部署Qwen2.5VL-7B (2025.10)
+  * DeepseekOCR、Qwen3-8B部署与应用 (2025.12)
+
+荣誉奖项
+======
+* 山东大学研究生金融科技创新大赛 一等奖 (2025)
+* 已申请发明专利 1项 (投标文件识别系统)
+
+<!-- 以下部分可以根据实际情况选择性保留或删除 -->
+
+<!-- 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
@@ -61,4 +88,5 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+-->
+
