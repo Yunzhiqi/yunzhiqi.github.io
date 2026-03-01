@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "付兴豪 - 计算机技术硕士"
+title: "付兴豪"
 author_profile: true
 redirect_from: 
   - /about/
